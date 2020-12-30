@@ -1,0 +1,9 @@
+<form (ngSubmit)="onSubmit(searchForm)" #searchForm="ngForm">
+  <mat-form-field appearance="legacy" class="mb-3 w-100">
+    <mat-label>search for people</mat-label>
+    <input type="text" matInput placeholder="" ngModel name="name" />
+    <mat-hint>*** enter a name</mat-hint>
+  </mat-form-field>
+  <br>
+  <button mat-raised-button color="primary" type="submit">search</button>
+</form>
