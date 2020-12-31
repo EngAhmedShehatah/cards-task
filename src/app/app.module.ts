@@ -8,12 +8,14 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { SearchInputComponent } from './search-input/search-input.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
-  declarations: [AppComponent, SearchInputComponent],
+  declarations: [AppComponent, SearchInputComponent, CardComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -23,6 +25,7 @@ import { SearchInputComponent } from './search-input/search-input.component';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,9 @@
+
+mat-card-header {
+  border-bottom: 01px solid gray;
+}
+
+.header-image {
+  background-image: url('../../assets/images/card-avatar.png');
+  background-size: 100% 100%;
+}

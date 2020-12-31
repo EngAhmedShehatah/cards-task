@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ConnectService } from '../connect/connect.service';
 
@@ -8,6 +8,8 @@ import { ConnectService } from '../connect/connect.service';
   styleUrls: ['./search-input.component.css']
 })
 export class SearchInputComponent implements OnInit {
+
+  @Output() gotResults = new EventEmitter<object[]>();
   results: object[] = [];
 
   constructor(private connectService: ConnectService) { }
@@ -20,7 +22,7 @@ export class SearchInputComponent implements OnInit {
     .subscribe(
       (response: any) => {
         this.results = response.results;
-        console.log(this.results);
+        this.gotResults.emit(this.results);
       }
     );
   }
