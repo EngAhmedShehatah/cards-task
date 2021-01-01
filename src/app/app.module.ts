@@ -8,7 +8,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
+import { DragulaModule } from 'ng2-dragula';
 
 import { AppComponent } from './app.component';
 import { SearchInputComponent } from './search-input/search-input.component';
@@ -25,7 +26,8 @@ import { CardComponent } from './card/card.component';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    DragulaModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],
