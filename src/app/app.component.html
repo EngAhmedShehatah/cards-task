@@ -9,12 +9,12 @@
       <app-search-input (gotResults)="onSearch($event)"></app-search-input>
     </div>
   </div>
-  <div class="row" *ngIf="people.length === 0">
+  <div class="row" *ngIf="people && people.length === 0">
     <div class="col-12">
       <h1 class="display-5 text-danger">Nothing to display</h1>
     </div>
   </div>
-  <div class="row container" *ngIf="people.length> 0 " [dragula]="dragulaName" [(dragulaModel)]='people'>
+  <div class="row container" *ngIf="people && people.length> 0 " [dragula]="dragulaName" [(dragulaModel)]='people'>
     <div class="col-12 col-sm-6 col-lg-4 mb-4" *ngFor="let person of people">
       <app-card [cardData]="person"></app-card>
     </div>

@@ -14,6 +14,7 @@ import { DragulaModule } from 'ng2-dragula';
 import { AppComponent } from './app.component';
 import { SearchInputComponent } from './search-input/search-input.component';
 import { CardComponent } from './card/card.component';
+import { ConnectService } from './connect/connect.service';
 
 @NgModule({
   declarations: [AppComponent, SearchInputComponent, CardComponent],
@@ -29,7 +30,7 @@ import { CardComponent } from './card/card.component';
     MatCardModule,
     DragulaModule.forRoot(),
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
