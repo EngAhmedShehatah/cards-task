@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Deploy
+
+To deploy this app on your server, follow these simple two steps:
+1- Create a production version of the app using `ng build --prod`
+2- Copy everything within the output folder `dist/cards-task/` to a folder on the server.
+
+For more deployment options, you can check https://angular.io/guide/deployment
